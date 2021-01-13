@@ -1,0 +1,141 @@
+.wwapper__products {
+  margin-top: 100px;
+}
+// First ice cream
+
+.product__first {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  &__description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .description__title {
+      color: $colorFont;
+    }
+  }
+  .description__text {
+    color: $colorP;
+    font-family: $fontFamily2;
+  }
+  .description__button {
+    width: 40%;
+    border: 2px solid $colorFont;
+    border-radius: 30px;
+    padding: 8px 18px;
+    margin-top: 20px;
+    background-color: $colorFont;
+    color: white;
+    font-size: 16px;
+    font-family: $fontFamily1;
+    transition: all 0.2s linear;
+    &:hover {
+      background-color: transparent;
+      color: $colorFont;
+      cursor: pointer;
+    }
+  }
+  .product__first__image {
+    width: 30%;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+// Produkt second
+
+.product__second {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+
+  &__description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    order: 2;
+    .description__title {
+      color: $colorFont;
+    }
+  }
+  .description__text {
+    color: $colorP;
+    font-family: $fontFamily2;
+  }
+  .description__button {
+    width: 40%;
+    border: 2px solid $colorFont;
+    border-radius: 30px;
+    padding: 8px 18px;
+    margin-top: 20px;
+    background-color: $colorFont;
+    color: white;
+    font-size: 16px;
+    font-family: $fontFamily1;
+    transition: all 0.2s linear;
+    &:hover {
+      background-color: transparent;
+      color: $colorFont;
+      cursor: pointer;
+    }
+  }
+  .product__second__image {
+    width: 30%;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+// product third
+
+.product__third {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+
+  &__description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    order: 0;
+    .description__title {
+      color: $colorFont;
+    }
+  }
+  .description__text {
+    color: $colorP;
+    font-family: $fontFamily2;
+  }
+  .description__button {
+    width: 40%;
+    border: 2px solid $colorFont;
+    border-radius: 30px;
+    padding: 8px 18px;
+    margin-top: 20px;
+    background-color: $colorFont;
+    color: white;
+    font-size: 16px;
+    font-family: $fontFamily1;
+    transition: all 0.2s linear;
+    &:hover {
+      background-color: transparent;
+      color: $colorFont;
+      cursor: pointer;
+    }
+  }
+  .product__third__image {
+    width: 30%;
+    img {
+      width: 100%;
+    }
+  }
+}

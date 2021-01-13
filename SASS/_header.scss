@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 0 80px;
+}
+.header {
+  height: 100vh;
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15%;
+    // position: sticky;
+    // top: 50px;
+    &__ul {
+      display: flex;
+      width: 50%;
+      justify-content: space-between;
+
+      &__li {
+        position: relative;
+        padding-bottom: 5px;
+
+        &__a {
+          font-family: $fontFamily1;
+          color: $colorFont;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 2px;
+          width: 0;
+          background-color: $colorFont;
+          transition: all 0.3s ease-in-out;
+        }
+        &:hover {
+          &::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  &__main {
+    margin-top: -20px;
+    height: 100%;
+    // background-color: yellow;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &__ice {
+      width: 100%;
+      height: auto;
+      &__img {
+        width: 100%;
+      }
+    }
+    &__description {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+      h1 {
+        margin-bottom: 28px;
+        font-size: 90px;
+        color: $colorFont;
+      }
+      p {
+        margin-bottom: 28px;
+        font-family: $fontFamily2;
+        color: gray;
+      }
+      button {
+        display: inline-block;
+        width: 30%;
+        background-color: #556534;
+        margin-top: 28px;
+        font-family: $fontFamily1;
+        color: white;
+        border: none;
+        padding: 10px 10px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+        border: 1px solid #556534;
+        &:hover {
+          background-color: transparent;
+          color: #556534;
+        }
+      }
+    }
+  }
+}
+
+#order {
+  border-radius: 30px;
+  padding: 10px 25px;
+  background-color: $colorFont;
+  color: #fff;
+  font-family: $fontFamily1;
+  transition: all 0.3s;
+  border: 2px solid $colorFont;
+}
+#order:hover {
+  background-color: transparent;
+  color: $colorFont;
+}
